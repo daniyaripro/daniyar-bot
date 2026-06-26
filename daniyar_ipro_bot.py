@@ -486,6 +486,7 @@ def main():
         fallbacks=[CommandHandler("cancel", cancel)]
     )
 
+    app.add_handler(CommandHandler("start", start))
     app.add_handler(lang_conv)
     app.add_handler(CommandHandler("post", post))
     app.add_handler(CommandHandler("confirm", confirm))
